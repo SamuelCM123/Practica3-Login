@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
+    <!-- Importación de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- Estilos locales -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,37 +17,43 @@
     <div class="main-container">
         <div class="card">
             <div class="card-info">
-                <div class="card-info__div card-info__div--logo">
-                    <h1 class="card-info__div__h1 card-info__div__h1--nombrelogo">LOGO</h1>
+                <div class="card-info-logo">
+                    <span class="card-info-brand">Logo</span>
                 </div>
-                <div class="card-info__div card-info__div--bienvenida">
-                    <h1 class="card-info__div__h1 card-info__div__h1--welcome">Welcome Back , </h1>
-                    <p class="card-info__div__p card-info__div__p--signin">Sign in to continue access pages</p>
+                <div class="card-info-welcome">
+                    <h1 class="card-info-title">Welcome Back , </h1>
+                    <p class="card-info-description">Sign in to continue access pages</p>
                 </div>
-                <div class="card-info__div card-info__div--link">
-                    <p class="card-info__div__p card-info__div__p--web">www.yoursite.com</p>
+                <div class="card-info-link">
+                    <p class="card-info-web">www.yoursite.com</p>
                 </div>
             </div>
             <div class="card-form">
-                <div class="card-form-div">
-                    <div class="form-div form-div--sign">
-                        <h1 class="form-div__h1 form-div__h1--signin">Sign In</h1>
-                    </div>
-                    <div class="form-div">
-                        <input type="email" class="form-div__input form-div__input--email" placeholder="Email Address"
+                <div class="card-form-wrapper">
+                    <!-- Título del Formulario -->
+                    <h2 class="card-form-title">Sign In</h2>
+
+                    <!-- Formulario -->
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Email Address"
                             name="email" id="email">
-                        <input type="password" class="form-div__input form-div__input--password" placeholder="Password"
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" placeholder="Password"
                             name="password" id="password">
-                    </div>
-                    <div class="form-div">
-                        <button class="form-div__button form-div__button--continue">CONTINUE</button>
-                    </div>
-                    <div class="form-div">
-                        <p class="form-div__p--connect">or Connect with Social Media</p>
-                    </div>
-                    <div class="form-div">
-                        <button class="form-div__button form-div__button--twitter">Sign in With Twitter</button>
-                        <button class="form-div__button form-div__button--facebook">Sign in With Facebook</button>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn--continue">CONTINUE</button>
+                        </div>
+                    </form>
+
+                    <!-- Otros Medios de Inicio de Sesión -->
+                    <p class="contact-form-social">or Connect with Social Media</p>
+
+                    <div class="btn-wrapper">
+                        <button class="btn btn--twitter">Sign in With Twitter</button>
+                        <button class="btn btn--facebook">Sign in With Facebook</button>
                     </div>
                 </div>
             </div>

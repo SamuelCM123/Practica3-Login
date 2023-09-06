@@ -1,10 +1,10 @@
 .main-container,
 .card,
-.card-info__div__h1--nombrelogo::before,
-.card-info__div__p--web,
+.card-info-brand::before,
+.card-info-web,
 .card-form,
-.card-form-div,
-.form-div {
+.card-form-wrapper,
+.btn-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,10 +12,9 @@
 }
 
 .main-container {
-    background-color: red;
     width: 100vw;
     height: 100vh;
-    background-image: url('../assets/backwave.svg');
+    background-image: url('../assets/icons/backwave.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -40,36 +39,35 @@
     height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-image: url('../assets/Wave.svg');
+    background-image: url('../assets/icons/Wave.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 0px 40px;
+    color: white;
 }
 
-.card-info__div {  color: white;}
-
-.card-info__div--logo {
-    box-sizing: border-box;
+.card-info-logo {
     position: relative;
     padding-left: 30px;
     padding-top: 60px;
 }
 
-.card-info__div__h1--nombrelogo {
+.card-info-brand {
     margin-left: 40px;
     font-size: 20px;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
-.card-info__div__h1--nombrelogo::before {
-    content: url('../assets/logo.svg');
+.card-info-brand::before {
+    content: url('../assets/icons/logo.svg');
     position: absolute;
     left: 15px;
     width: 30px;
     height: 30px;
 }
 
-.card-info__div--bienvenida {
+.card-info-welcome {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,27 +77,27 @@
     letter-spacing: 1.5px;
 }
 
-.card-info__div__h1--welcome {
+.card-info-title {
     font-size: 38px;
     font-weight: 600;
 }
 
-.card-info__div--link {
+.card-info-link {
     display: flex;
     align-items: end;
     box-sizing: border-box;
     padding-bottom: 30px;
 }
 
-.card-info__div__p--signin{ font-weight: 200;}
+.card-info-description { font-weight: 200; }
 
-.card-info__div__p--web {
+.card-info-web {
     position: relative;
     margin-left: 50%;
     font-weight: 500;
 }
 
-.card-info__div__p--web::before {
+.card-info-web::before {
     content: "";
     position: absolute;
     background-color: white;
@@ -122,7 +120,7 @@
 }
 
 .card-form::before {
-    content: url('../assets/lock.svg');
+    content: url('../assets/icons/lock.svg');
     position: absolute;
     z-index: 100;
     top: 3%;
@@ -131,29 +129,34 @@
     height: 100px;
 }
 
-
-.card-form-div {
+.card-form-wrapper {
     flex-direction: column;
     width: 100%;
     height: 100%;
     gap: 20px;
 }
 
-.form-div--sign{  padding-bottom: 25px;}
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-.form-div {
+.btn-wrapper {
     flex-direction: column;
     width: 100%;
     gap: 20px;
 }
 
-.form-div__h1--signin {
+.card-form-title {
     font-weight: 700;
     font-size: 32px;
     margin-right: auto;
+    padding-bottom: 25px;
 }
 
-.form-div__input {
+.form-input {
     box-sizing: border-box;
     background-color: #f0f0f0;
     width: 100%;
@@ -165,14 +168,14 @@
     font-size: 12px;
 }
 
-.form-div__input:focus { outline: solid .5px black;}
+.form-input:focus { outline: solid .5px black;}
 
-.form-div__p--connect {
+.contact-form-social {
     font-size: 11px;
     color: gray;
 }
 
-.form-div__button {
+.btn {
     cursor: pointer;
     position: relative;
     outline: none;
@@ -184,53 +187,46 @@
     color: white;
 }
 
-
-.form-div__button--twitter { background-color: #4ac0e4;}
-
-.form-div__button--twitter:hover { background-color: #3893af;}
-
-.form-div__button--facebook {  background-color: #3999dc;}
-
-.form-div__button--facebook:hover {  background-color: #2b75aa;}
-
-.form-div__button--twitter,
-.form-div__button--facebook {
+.btn--twitter,
+.btn--facebook {
     padding-left: 80px;
     text-align: left;
 }
 
-.form-div__button--continue {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fd8584;
-    letter-spacing: 4px;
-}
-
-.form-div__button--continue:hover {  background-color: #cc6d6d;}
-
-.form-div__button--continue::before {
-    width: 100%;
-    content: url('../assets/masQue.svg');
-    position: absolute;
-    top: 0;
-    left: 45%;
-}
-
-.form-div__button--twitter::before {
-    content: url('../assets/twitter.svg');
+.btn--twitter { background-color: #4ac0e4;}
+.btn--twitter:hover { background-color: #3893af;}
+.btn--twitter::before {
+    content: url('../assets/icons/twitter.svg');
     width: 100%;
     position: absolute;
     top: 2px;
     left: 25px;
 }
 
-.form-div__button--facebook::before {
+.btn--facebook {  background-color: #3999dc;}
+.btn--facebook:hover {  background-color: #2b75aa;}
+.btn--facebook::before {
     display: flex;
     align-items: center;
-    content: url('../assets/facebook.svg');
+    content: url('../assets/icons/facebook.svg');
     height: 100%;
     position: absolute;
     top: 1px;
     left: 15px;
+}
+
+.btn--continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fd8584;
+    letter-spacing: 4px;
+}
+.btn--continue:hover {  background-color: #cc6d6d;}
+.btn--continue::before {
+    width: 100%;
+    content: url('../assets/icons/masQue.svg');
+    position: absolute;
+    top: 0;
+    left: 45%;
 }
