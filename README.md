@@ -3,6 +3,8 @@
 ## **Descripción**
     Maquetación de login, con HTML y CSS puro, donde contiene logo y botones de redireccionamiento para diferentes inicios de sesión.
 
+## **Previsualización de proyecto**
+    ![Previsualización](//assets/imagenProyecto.png)
 ## **Pasos de Instalación**
 
 Siga estos pasos para instalar y ejecutar el proyecto localmente:
@@ -12,3 +14,11 @@ Siga estos pasos para instalar y ejecutar el proyecto localmente:
     ```proweshell
     git clone https://github.com/SamuelCM123/tasks.git
     ```
+
+2. Abrir el archivo index.html o correr la extension liver server.
+
+## Contacto
+    Si tienes alguna pregunta o comentario, no dudes en contactarme, correo:samuel.calderon@cistem.com.mx.
+
+## Personalización
+    Si deseas personalizar el sitio, puedes editar el archivo `css/styles.css` para cambiar los estilos y actualizar el contenido en `index.html`.
