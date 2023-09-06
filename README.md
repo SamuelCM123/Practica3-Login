@@ -4,7 +4,7 @@
     Maquetación de login, con HTML y CSS puro, donde contiene logo y botones de redireccionamiento para diferentes inicios de sesión.
 
 ## **Previsualización de proyecto**
-![Imagen](./assets/imagenProyecto.png)
+![Previsualización](./assets/imagenProyecto.png)
 ## **Pasos de Instalación**
 
 Siga estos pasos para instalar y ejecutar el proyecto localmente:
@@ -12,7 +12,7 @@ Siga estos pasos para instalar y ejecutar el proyecto localmente:
 1. Clone el siguiente repositorio:
 
     ```proweshell
-    git clone https://github.com/SamuelCM123/tasks.git
+    git clone https://github.com/SamuelCM123/Practica3-Login.git
     ```
 
 2. Abrir el archivo index.html o correr la extension liver server.
