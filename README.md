@@ -4,7 +4,7 @@
     Maquetación de login, con HTML y CSS puro, donde contiene logo y botones de redireccionamiento para diferentes inicios de sesión.
 
 ## **Previsualización de proyecto**
-    ![Previsualización](//assets/imagenProyecto.png)
+    ![Previsualización](/assets/imagenProyecto.png)
 ## **Pasos de Instalación**
 
 Siga estos pasos para instalar y ejecutar el proyecto localmente:
